@@ -1,10 +1,12 @@
-<h1>Book was successfully created.</h1>
+
 
 <% @books.each do |book| %>
 
  <p>Title:</p>
   <span><%= link_to book.title, book_path(book.id) %></span>
- 
+
+
+
  <p>Body:</p>
   <span><%= link_to book.body, book_path(book.id) %></span>
 

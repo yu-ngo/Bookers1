@@ -1,3 +1,72 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+//showのレイアウト
+.show-title{
+  color:green;
+  margin:30px 0px 0px 60px;
+}
+
+.show-deta-title, .show-data-body{
+  display:flex;
+  margin:30px 0px 30px 60px;
+}
+
+.show-menu{
+  margin-left:30px;
+}
+
+
+
+//newのレイアウト
+.new-large{
+  margin:30px 0px 20px 30px;
+}
+
+.new-table{
+  display:flex;
+  margin-left:30px;
+}
+
+.new-book{
+  margin:30px 0px 20px 30px;
+}
+
+.new-for-title{
+  margin:0px 0px 10px 30px;
+  background-color:red;
+}
+
+.new-for-body{
+  margin:0px 0px 0px 30px;
+}
+
+.new-for-create{
+  margin:0px 0px 0px 30px;
+}
+
+
+.new-error{
+  width:500px;
+  height:150px;
+  border:2.5px solid red;
+  margin:10px 0px 20px 20px;
+}
+
+.new-error-text{
+  color:white;
+  padding:5px 0px 5px 10px;
+  background-color:#CC0000;
+}
+
+.new-error-code{
+  background-color:#EEE;
+  height:119px;
+  marign-left:200px
+}
