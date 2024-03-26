@@ -1,2 +1,14 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<h4>Title:</h4>
+<p><%= @book.title %></p>
+
+<h4>Body:</h4>
+<p><%= @book.body %></p>
+
+<p>
+  <a href="<%= edit_book_path(@book) %>">Edit</a>
+  <span>|</span>
+  <a href="https://ec66306f3b964e1e9318c7feafb862e5.vfs.cloud9.ap-northeast-1.amazonaws.com/books/new">Back</a>
+</p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<%= link_to "Destroy", destroy_book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
