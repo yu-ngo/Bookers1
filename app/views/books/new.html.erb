@@ -7,8 +7,30 @@
   <h4>Title</h4>
   <h4>Body</h4>
 </div>
-  
 
+<% @books.each do |book| %>
+
+<div class="new-log">
+  <%= link_to book.title, books_path(book.id) %>
+  
+  <%= link_to book.body, books_path(book.id) %>
+  
+  <div class="new-show">
+     <a href="<%= books_path(@book) %>">Show</a>
+  </div>
+ 
+  <div class="new-edit">
+     <a href="<%= books_path(@book) %>">Edit</a>
+  </div>
+ 
+  <div class="new-destroy">
+    <%= link_to "Destroy", books_path(@book.id), method: :delete, "data-confirm" => "Are you sure？" %>
+  </div>
+
+</div>
+
+<% end %>
+  
 <div class="new-book">
   <h2>New Book</h2>
 </div>
