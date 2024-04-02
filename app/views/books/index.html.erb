@@ -1,16 +1,113 @@
+<%= flash[:notice] %>
+<div class="new-large">
+  <h1>Books</h1>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td>リーダブルコード</td>
+      <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+    </tr>
+
+    <tr>
+      <td>トラブル知らずのシステム設計</td>
+      <td>システム設計の要点を図解で説明してくれます</td>
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>たのしいRuby</td>
+      <td>Rubyの入門におすすめです</td>
+    </tr>
+
+     <tr>
+      <td>入門Git</td>
+      <td>gitについての基本操作から内部構造まで解説してくれます</td>
+    </tr>
+
+     <tr>
+      <td>アルゴリズム図鑑</td>
+      <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+    </tr>
+
+    <tr>
+      <td>達人プログラマー</td>
+      <td>プログラマ入門者は必読！</td>
+    </tr>
+
+    <tr>
+      <td>データベース実践入門</td>
+      <td>効率的なSQL文を教えてくれます</td>
+    </tr>
+
+  </tbody>
+</table>
 
 
-<% @books.each do |book| %>
 
- <p>Title:</p>
-  <span><%= link_to book.title, book_path(book.id) %></span>
+ <% @booka.each do |bookb| %>
+ <%= bookb.title %>
+ <%= bookb.body %>
+ <%= link_to "Show", book_path(bookb.id) %>　<!--showへ-->
+ <%= link_to "Edit", edit_book_path(bookb.id) %>　<!--editへ-->
+ <%= link_to "Destroy", destroy_book_path(bookb.id), method: :delete, "data-confirm"=>"Are you sure?" %>
+ <% end %>
 
 
 
- <p>Body:</p>
- <span><%= link_to book.body, book_path(book.id) %></span>
+
+<!--エラーを教えてくれるよ-->
+<div class="new-error">
+  <% if @book.errors.any? %>
+
+  <div class="new-error-text">
+    <h6>
+      <%= @book.errors.count %>errors prohibited this book from being saved:
+    </h6>
+  </div>
+
+  <div class="new-error-code">
+    <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+   </ul>
+  </div>
+  <% end %>
+</div>
+
+<!--新しいフォーム-->
+<div class="new-book">
+  <h2>New Book</h2>
+</div>
+
+<%= form_with model: @book, method: :post do |f| %>
+<div ="new-for-title">
+  <p>Title</p>
+  <%= f.text_field :title %>
+</div>
+
+<div class="new-for-body">
+ <p>Body</p>
+ <%= f.text_area :body %>
+</div>
+
+<div class="new-for-create">
+ <p>
+   <%= f.submit 'Create Book' %>
+ </p>
+</div>
 
 <% end %>
 
-
-<p><a href="https://ec66306f3b964e1e9318c7feafb862e5.vfs.cloud9.ap-northeast-1.amazonaws.com/books/new">Back</a></p>
