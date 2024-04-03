@@ -28,17 +28,17 @@
      </td>
      <td>
        <div class="show-jump">
-         <%= link_to "Show", book_path(bookb.id) %>　<!--showへ-->
+         <%= link_to "Show", book_path(bookb.id), style: "color:black;" %>　<!--showへ-->
        </div>
      </td>
      <td>
        <div class="edit-jump">
-          <%= link_to "Edit", edit_book_path(bookb.id) %>　<!--editへ-->
+          <%= link_to "Edit", edit_book_path(bookb.id), style: "color:black;" %>　<!--editへ-->
        </div>
      </td>
      <td>
        <div class="destroy">
-          <%= link_to "Destroy", destroy_book_path(bookb.id), method: :delete, "data-confirm"=>"Are you sure?" %>
+          <%= link_to "Destroy", destroy_book_path(bookb.id), style: "color:black;", method: :delete, "data-confirm"=>"Are you sure?" %>
        </div>
      </td>
      
@@ -62,13 +62,26 @@
     </h6>
   </div>
 
-  <div class="new-error-code">
-    <ul>
-    <% @book.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-   </ul>
-  </div>
+
+    
+     <div class="new-error-message">
+     <% @book.errors.full_messages.each do |message| %>
+        <ul>
+        <li><%= message %></li>
+        </ul>
+     <% end %>
+     </div>
+    
+    <div class="error-red-1">
+    </div>
+    <div class="error-red-2">
+    </div>
+    <div class="error-red-3">
+    </div>
+    <div class="error-red-4">
+    </div>
+  
+  
 </div>
 <% end %>
 

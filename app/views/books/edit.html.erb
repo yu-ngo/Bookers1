@@ -1,7 +1,7 @@
 
-<dtv class="edit-title">
+<div class="edit-title">
  <h1>Editing Book</h1>
-</dtv>
+</div>
 
 
 <%= form_with model: @bookb, url: update_book_path(@bookb.id), method: :patch do |f| %>
@@ -16,15 +16,15 @@
  <%= f.text_field :body %> 
 </div>
 
- <div class="edit-ok">
+<div class="edit-ok">
    <%= f.submit 'Update Book' %>  
- </a>
- 
+</div>
 
 <% end %>
+
 <div class="edit-jump-w">
-  <%= link_to "Show", book_path %>　<!--showへ-->
-  <span>|</span> 
-  <%= link_to "Back", index_book_path %>　<!--indexへ-->
+　<%= link_to "Show", book_path, style: "color:black;" %><!--showへ-->
+  <span>|</span>
+  <%= link_to "Back", index_book_path, style: "color:black;" %>　<!--indexへ-->
 </div>
  

@@ -19,11 +19,12 @@
 }
 
 .show-menu{
-  color:black;
+margin-left:30px;
 }
 
 // editのcss
 .edit-title{
+  font-family: verdana, arial, helvetica, sans-serif;
   margin:30px 0px 10px 30px;
 }
 
@@ -41,14 +42,14 @@
 }
 
 .edit-jump-w{
-  display:flex;
-  margin:-70px 0px 0px 15px;
+  margin:10px 0px 0px 15px;
 }
 
 
 
 //indexのレイアウト
 .new-large{
+  font-family: verdana, arial, helvetica, sans-serif;
   margin:30px 0px 20px 30px;
 }
 
@@ -87,6 +88,7 @@
 
 // 新規投稿のcss
 .new-book{
+  font-family: verdana, arial, helvetica, sans-serif;
   margin:30px 0px 20px 30px;
 }
 
@@ -102,22 +104,63 @@
   margin:10px 0px 0px 30px;
 }
 
-
+// エラーのcss
 .new-error{
   width:500px;
   height:150px;
+  background-color:#EEE;
   border:2.5px solid red;
-  margin:10px 0px 20px 20px;
+  margin:10px 0px 20px 30px;
 }
 
 .new-error-text{
+  font-family: verdana, arial, helvetica, sans-serif;
   color:white;
   padding:5px 0px 5px 10px;
   background-color:#CC0000;
 }
 
 .new-error-code{
-  background-color:#EEE;
   height:119px;
   marign-left:200px
+}
+
+.new-error-message{
+  margin-left:90px;
+  margin-top:40px;
+}
+
+li{
+  list-style-type:square;
+}
+
+.error-red-1{
+  width:40px;
+  height:28px;
+  background-color:red;
+  margin-top:54px;
+  margin-left:-4px;
+
+}
+
+.error-red-2{
+  width:147px;
+  height:25px;
+  background-color:red;
+  margin-left:-4px
+}
+
+.error-red-3{
+  width:45px;
+  height:22px;
+  background-color:red;
+  margin-top:8px;
+  margin-left:-4px;
+}
+
+.error-red-4{
+  width:158px;
+  height:48px;
+  background-color:red;
+  margin-left:-4px
 }
