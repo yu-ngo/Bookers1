@@ -19,12 +19,35 @@
 }
 
 .show-menu{
-  margin-left:30px;
+  color:black;
+}
+
+// editのcss
+.edit-title{
+  margin:30px 0px 10px 30px;
+}
+
+.edit-text-title{
+  margin:0px 0px 10px 30px;
+}
+
+.edit-text-body{
+  margin:0px 0px 0px 30px;
+}
+
+.edit-ok{
+  white-space: pre-wrap;
+  margin:-15px 0px 0px 15px;
+}
+
+.edit-jump-w{
+  display:flex;
+  margin:-70px 0px 0px 15px;
 }
 
 
 
-//newのレイアウト
+//indexのレイアウト
 .new-large{
   margin:30px 0px 20px 30px;
 }
@@ -42,13 +65,33 @@
   margin-left:10px;
 }
 
+// バリデーションのcss
+.test-me{
+  margin:20px 20px 5px 35px;
+}
+// text-iは記述しません
+
+.show-jump{
+  margin-left:10px;
+  color:black;
+}
+
+.edit-jump{
+  color:black;
+}
+
+.destroy{
+  color:black;
+}
+
+
+// 新規投稿のcss
 .new-book{
   margin:30px 0px 20px 30px;
 }
 
 .new-for-title{
   margin:0px 0px 10px 30px;
-  background-color:red;
 }
 
 .new-for-body{
@@ -56,7 +99,7 @@
 }
 
 .new-for-create{
-  margin:0px 0px 0px 30px;
+  margin:10px 0px 0px 30px;
 }
 
 
