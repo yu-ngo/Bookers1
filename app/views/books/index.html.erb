@@ -1,4 +1,7 @@
-<%= flash[:notice] %>
+<div class="destroy-flash">
+  <%= flash[:notice] %>
+</div>
+
 <div class="new-large">
   <h1>Books</h1>
 </div>
@@ -58,7 +61,7 @@
 
   <div class="new-error-text">
     <h6>
-      <%= @book.errors.count %>errors prohibited this book from being saved:
+      <%= @book.errors.count %> errors prohibited this book from being saved:
     </h6>
   </div>
 

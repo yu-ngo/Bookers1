@@ -28,6 +28,68 @@ margin-left:30px;
   margin:30px 0px 10px 30px;
 }
 
+// editエラーのcss
+.edit-error{
+  width:500px;
+  height:150px;
+  background-color:#EEE;
+  border:2.5px solid red;
+  margin:10px 0px 20px 30px;
+}
+
+.edit-error-text{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:20px;
+  color:white;
+  padding:5px 0px 5px 10px;
+  background-color:#CC0000;
+}
+
+.edit-error-code{
+  height:119px;
+  marign-left:200px
+}
+
+.edit-error-message{
+  margin-left:90px;
+  margin-top:40px;
+}
+
+li{
+  list-style-type:square;
+}
+
+.error-red-5{
+  width:35px;
+  height:21px;
+  background-color:red;
+  margin-top:54px;
+  margin-left:-4px;
+
+}
+
+.error-red-6{
+  width:147px;
+  height:24px;
+  background-color:red;
+  margin-left:-4px
+}
+
+.error-red-7{
+  width:41px;
+  height:22px;
+  background-color:red;
+  margin-top:8px;
+  margin-left:-4px;
+}
+
+.error-red-8{
+  width:147px;
+  height:28px;
+  background-color:red;
+  margin-left:-4px
+}
+
 .edit-text-title{
   margin:0px 0px 10px 30px;
 }
@@ -48,6 +110,14 @@ margin-left:30px;
 
 
 //indexのレイアウト
+.destroy-flash{
+  margin:40px 0px 0px 75px;
+}
+
+.destroy-flash{
+  color:green;
+}
+
 .new-large{
   font-family: verdana, arial, helvetica, sans-serif;
   margin:30px 0px 20px 30px;
